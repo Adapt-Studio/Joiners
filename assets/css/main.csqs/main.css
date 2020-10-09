@@ -26,6 +26,7 @@ body {
   align-items: center;
 }
 img {
+  border: 1px solid #f00;
   width: 100%;
   height: auto;
 }
@@ -77,33 +78,20 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-#slider {
-  width: 0;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #182422;
-  z-position: 1;
-  padding: 0;
-  margin: 0;
+.slider {
+  width: 0vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#slider .close {
-  font-size: 2rem;
-  position: absolute;
-  top: 5px;
-  right: 30px;
-}
-#slider nav {
+.slider nav {
   width: 75vw;
   height: 75vh;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 4rem;
 }
 /*Footer*/
 footer {
@@ -140,9 +128,6 @@ footer {
   align-items: center;
   margin: 0 auto;
 }
-.imggrid img {
-  margin-bottom: 1.5rem;
-}
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -156,7 +141,6 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  margin-bottom: 4rem;
 }
 .contact-details {
   height: 400px;
@@ -240,19 +224,5 @@ footer {
     align-items: flex-start;
     text-align: left;
     margin: 0 auto;
-  }
-}
-@media (min-width: 761px) and (max-width: 1025px) {
-  .imggrid {
-    width: 70vw;
-  }
-  .imggrid img {
-    margin: 0;
-  }
-}
-@media (min-width: 1026px) and (max-width: 1112px) {
-  .imgrgrid img {
-    width: 300px;
-    height: 300px;
   }
 }
