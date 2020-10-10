@@ -16,16 +16,55 @@
 </head>
 <body>
 	<header>
-		<img src='assets/images/logo.png' alt="The Joiners Logo">
-		<img src='assets/images/menu.png' alt="menu icon">
+		<img class='logo' src='assets/images/icons/logo.png' alt="The Joiners Logo">
+		<img src='assets/images/icons/menu.png' class='menuIcon' onclick='menuClick()' ></div>
+		<div id='slider'>
+			<span class='close' onclick='menuClose()'>&times;</span>
+			<nav id='mobileNav'>
+				<a href="index.html">Home</a>
+				<a href="events.html">Events</a>
+				<a href="merch.html">Merch</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	
+		<nav class='desktop'>
+			<a href="index.html">Home</a>
+			<a href="events.html">Events</a>
+			<a href="merch.html">Merch</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	
 	</header>	
-
+	<h2 class='mobile'>Merch</h2>
+	<div class='imggrid'>
+		<div class='product'>
+			<img src="assets/images/merch/01.png" alt="The Joiners Tee">
+			<h3>The Joiners Tee</h3>
+		</div>
+		<div class='product'>
+			<img src="assets/images/merch/02.png" alt="The Joiners Longsleeve">
+			<h3>The Joiners Longsleeve</h3>
+		</div>
+		<div class='product'>
+			<img src="assets/images/merch/03.png" alt="The Joiners Book + Sticker">
+			<h3>The Joiners Book + Sticker</h3>
+		</div>
+		<div class='product'>
+			<img src="assets/images/merch/04.png" alt="The Joiners Cap">
+			<h3>The Joiners Cap</h3>
+		</div>
+		<div class='product'>
+			<img src="assets/images/merch/05.png" alt="The Joiners Tote Bag + Sticker">
+			<h3>The Joiners Tote Bag + Sticker</h3>
+		</div>
+	</div>
 	<footer>
 		<div class='footer-top'>
 			<span>TEL: 023 8178 2021</span>
 		</div>
 		<div class='footer-bottom'>
-			<nav>
+			<nav class='flex-container'>
 				<span>&copy;2020 The Joiners</span>
 				<a href='#'>Privacy Policy</a>
 				<a href='#'>Terms & Conditions</a>
@@ -33,4 +72,5 @@
 		</div>
 	</footer>
 </body>
+<script src='assets/js/script.js'></script>
 </html>

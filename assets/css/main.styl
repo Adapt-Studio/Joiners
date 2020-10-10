@@ -35,20 +35,21 @@ button
 	border none
 	border-radius 7px
 	cursor pointer
-input 
-	width 195px
-	height 30px
-	border none
-	border-radius 7px
-	background white
+	input 
+		width 195px 
+		height 30px 
+		border none
+		border-radius 7px
+		background white
 ::placeholder
 	color grey
 	padding-left .5rem
 .logo 
 	width 250px
 .menuIcon
-	width 50px
-	height 50px
+	display block 
+	width 40px 
+	height 30px
 /*Typography*/
 h2 
 	font-size 25px
@@ -111,9 +112,11 @@ footer
 .hero 
 	width 100vw
 	height 70vh
+	background-image url(../images/home/hero-img.png)
 	background-position center
 	background-repeat no-repeat
 	background-size cover
+	margin-bottom 1rem
 .imggrid
 	width 80vw
 	height auto
@@ -150,11 +153,11 @@ footer
 	font-weight 400
 	text-decoration underline
 #social
-	width 80vw
-	margin 0 auto
+	width 60vw
+	margin 3rem auto 2.5rem auto
 #social img
-	width 50px
-	height 50px
+	width 25px
+	height 25px
 @media(min-width: 760px)
 	.mobile
 		display none
@@ -172,13 +175,17 @@ footer
 			justify-content space-around
 			align-items center
 			text-transform uppercase
-	h2
+	2
 		text-align left
+		width 78.5vw
 		
 	.menuIcon
 		display none
 	#social
 		width 40vw
+		img
+			width 40px
+			height 40px
 	#recent 
 		width 80vw
 		margin 0 auto
@@ -208,8 +215,13 @@ footer
 	.imggrid
 		width 70vw
 		img
-			margin 0
+			margin-bottom 1rem
+
 @media(min-width: 1026px) and (max-width: 1112px)
 	.imgrgrid img 
 		width 300px
 		height 300px
+@media(min-width: 1919px)
+	#social img
+		width 60px
+		height 60px

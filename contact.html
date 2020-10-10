@@ -16,16 +16,43 @@
 </head>
 <body>
 	<header>
-		<img src='assets/images/logo.png' alt="The Joiners Logo">
-		<img src='assets/images/menu.png' alt="menu icon">
+		<img class='logo' src='assets/images/icons/logo.png' alt="The Joiners Logo">
+		<img src='assets/images/icons/menu.png' class='menuIcon' onclick='menuClick()' ></div>
+		<div id='slider'>
+			<span class='close' onclick='menuClose()'>&times;</span>
+			<nav id='mobileNav'>
+				<a href="index.html">Home</a>
+				<a href="events.html">Events</a>
+				<a href="merch.html">Merch</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	
+		<nav class='desktop'>
+			<a href="index.html">Home</a>
+			<a href="events.html">Events</a>
+			<a href="merch.html">Merch</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	
 	</header>	
-
+	<h2 class='mobile'>Contact Us</h2>
+	<div class='map'>
+<iframe width="100%" height="500" src="https://maps.google.com/maps?q=The%20Joiners&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+	</div>
+	<div class='contact-details'>
+		<p id='address'>141 ST Mary St, <br></br>Southampton S014 1NS</p>
+		<div class='other-contact'>
+			<p>tel: <span class='contact-highlight'>023 8178 2021</span></p>
+			<p>email: <span class="contact-highlight">info@joinerslive.co.uk</span></p>
+		</div>
+	</div>
 	<footer>
 		<div class='footer-top'>
 			<span>TEL: 023 8178 2021</span>
 		</div>
 		<div class='footer-bottom'>
-			<nav>
+			<nav class='flex-container'>
 				<span>&copy;2020 The Joiners</span>
 				<a href='#'>Privacy Policy</a>
 				<a href='#'>Terms & Conditions</a>
@@ -33,4 +60,5 @@
 		</div>
 	</footer>
 </body>
+<script src='assets/js/script.js'></script>
 </html>
